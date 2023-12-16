@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteActivity"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/addNoteHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/add_note"
+        android:textColor="@color/orange"
+        android:textSize="24sp"
+        tools:ignore="RelativeOverlap" />
+
+    <ImageView
+        android:id="@+id/saveButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/baseline_check_24"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="@string/enter_the_title"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/orange_border"
+        android:layout_below="@+id/addNoteHeading"
+        android:maxLines="1"
+
+        android:fontFamily="@font/poppins"
+        android:inputType="text"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleEditText"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/orange_border"
+        android:fontFamily="@font/poppins"
+        android:gravity="top"
+        android:hint="@string/enter_the_description"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColorHint="#000"
+        android:textSize="18sp"
+        tools:ignore="TextContrastCheck" />
+
+
+</RelativeLayout>
